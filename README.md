@@ -1,16 +1,90 @@
-# React + Vite
+# Counter Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React Counter Application built using the `useState` Hook. This project demonstrates state management, event handling, and conditional rendering in React.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Increment counter value
+* Decrement counter value
+* Reset counter to zero
+* Prevent counter value from going below zero
+* Display "Minimum limit reached" when count is zero
+* Responsive and clean UI using Tailwind CSS
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* Tailwind CSS
+* JavaScript (ES6)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd counter-app
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+## Project Structure
+
+```text
+counter-app/
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── public/
+├── package.json
+└── README.md
+```
+
+## Functionality
+
+### Increment
+
+Increases the counter value by 1.
+
+### Decrement
+
+Decreases the counter value by 1 and prevents negative values.
+
+### Reset
+
+Resets the counter value back to 0.
+
+### Conditional Rendering
+
+Displays the message:
+
+```text
+Minimum limit reached
+```
+
+when the counter value is zero.
+
+## Screenshot
+
+Add a screenshot of your application here.
+
+## Author
+
+Akash Noyal
